@@ -21,8 +21,8 @@ body {
   background:
     radial-gradient(
       circle at top,
-      rgba(173, 176, 228, 0.9),
-      rgba(0, 159, 251, 0.85)
+      rgba(164, 164, 214, 0.9),
+      rgba(0, 160, 251, 0.85)
     ),
     url("background.jpg");
   background-repeat: repeat;
@@ -30,7 +30,8 @@ body {
     100% 100%,
     30% 30%,
     100% 100%;
-  min-height: 100rem;
+    background-size:auto;
+  min-height: 100vh;
 }
 
 header {
@@ -252,11 +253,15 @@ ol {
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: #201e01;
+  font-size: 1.5rem;
   list-style: none;
   margin: 2rem auto;
   padding: 0;
   text-align: center;
+  border: 0.4rem solid rgba(27, 25, 15, 0.6);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #log li {
