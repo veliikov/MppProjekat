@@ -79,13 +79,13 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #ffe100;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #ffe100;
 }
 
 #players button {
@@ -195,8 +195,8 @@ ol {
   padding: 1rem;
 }
 
-#game-board button:hover{
-   background: #908c76;
+#game-board button:hover {
+  background: #908c76;
 }
 
 #game-over {
