@@ -85,11 +85,11 @@ h1 {
 }
 
 #players button {
-  width: 3rem;
+  width: 4rem;
   border: none;
   background: none;
-  color: #c3ba78;
-  font-size: 0.9rem;
+  color: #fcf6ca;
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -97,7 +97,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #ffc400;
 }
 
 .player {
@@ -127,9 +127,10 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: rgba(65, 64, 60,0.5);
   text-align: center;
   text-transform: uppercase;
+  outline: none;
 }
 
 .player-symbol {
