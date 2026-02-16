@@ -30,7 +30,7 @@ body {
     100% 100%,
     30% 30%,
     100% 100%;
-    background-size:auto;
+  background-size: auto;
   min-height: 100vh;
 }
 
@@ -99,6 +99,7 @@ h1 {
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
   text-align: center;
+  outline: none;
 }
 
 #players button:hover {
@@ -254,7 +255,8 @@ ol {
 #log {
   max-width: 20rem;
   color: #201e01;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
   list-style: none;
   margin: 2rem auto;
   padding: 0;
@@ -273,32 +275,6 @@ ol {
 #log li.highlighted {
   background-color: #3f3b00;
   color: white;
-}
-
-#game-hints {
-  text-align: center;
-  color: #46432f;
-}
-
-#game-hints h2 {
-  font-family: "Caprasimo", cursive;
-  font-size: 2rem;
-  margin: 0;
-}
-
-#game-hints ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#game-hints button {
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  color: #23221f;
-  font: inherit;
-  margin-top: 1.5rem;
 }
 
 @keyframes slide-in-from-left {
@@ -351,7 +327,6 @@ ol {
   }
 }
 
-/* Fancy animation for showing the "Game Over" element */
 @keyframes pop-in {
   0% {
     transform: scale(0);
@@ -363,5 +338,105 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  #game-container {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  #players {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #players li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #game-board {
+    gap: 1.2rem;
+  }
+
+  #game-board ol {
+    gap: 1.2rem;
+  }
+
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3.5rem;
+  }
+
+  #log {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #game-container {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .player-name,
+  .player input {
+    width: 6rem;
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .player-symbol {
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+  }
+
+  #game-board {
+    margin: 1.5rem 0;
+  }
+
+  #game-board ol {
+    gap: 0.8rem;
+  }
+
+  #game-board button {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 2.5rem;
+    border-radius: 8px;
+  }
+
+  #game-over h2 {
+    font-size: 2rem;
+  }
+
+  #game-over p {
+    font-size: 1.2rem;
+  }
+
+  #game-over button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #log {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
