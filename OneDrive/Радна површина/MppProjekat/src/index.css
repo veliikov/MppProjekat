@@ -210,22 +210,22 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(25, 24, 16, 0.93);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
 #game-over h2 {
   font-family: "Caprasimo", cursive;
-  font-size: 4rem;
+  font-size: 4.3rem;
   text-align: center;
-  color: #fcd256;
+  color: #ffd34e;
   margin: 0;
 }
 
 #game-over p {
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
-  color: #e1dec7;
+  color: #e7e4d3;
 }
 
 #game-over button {
@@ -233,8 +233,8 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #ffd34e;
+  color: #ffd34e;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -246,7 +246,7 @@ ol {
 
 #game-over button:hover {
   background: #fcd256;
-  color: #3f3b00;
+  color: #272500;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
